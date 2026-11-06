@@ -101132,10 +101132,16 @@ d=B
 s=3
 return B.M(k.iZ(),$async$$0)
 case 3:g=d.fi(b,!0,t.S)
-f=v.G.document.createElement("a")
+m=v.G
+f=m.document.createElement("a")
 f.href="data:application/octet-stream;charset=utf-16le;base64,"+A.qJ.gHF().ca(g)
-f.setAttribute("download",""+Date.now()+".pdf")
-f.click()
+f.setAttribute("download","Kevin Kays - Resume.pdf")
+f.setAttribute("target","_blank")
+f.setAttribute("type","hidden")
+n=m.document.body
+if(n!=null)n.appendChild(f)
+f.dispatchEvent(new m.MouseEvent("click",{bubbles:!0,cancelable:!0,view:m.window}))
+f.remove()
 e.aT(new B.arI(e))
 return B.P(null,r)}})
 return B.Q($async$$0,r)},
@@ -111927,7 +111933,7 @@ j=B.b([],p)
 i=B.lh(2024,10,1,0,0,0,0)
 q=B.lh(2028,10,18,0,0,0,0)
 f=B.b([new B.tf([null,j,k,"Blacksburg, VA",g,"Bachelor of Computer Science","Virginia Tech"]),new B.tf(["(certified through)",B.b(["- Training in patient assessment and management of various medical problems","- Certification in Adult, Child, and Infant CPR, AED, and Airway Management","- Certification in Epinephrine Auto-injector use"],p),q,"Flagstaff, AZ",i,"Wilderness First Responder","NOLS Wilderness Medicine"])],f)
-return new B.XW([B.b(["colors: [gruvbox.org](https://gruvbox/)","regular font: [lato](https://www.latofonts.com/)","monospace font: [sourcefoundry:hack](https://sourcefoundry.org/hack/)","written by hand in dart/flutter"],p),f,n,"okkays@pm.me",h,m,l,o,"Principal Software Engineering Consultant","Kevin Kays","7576520310","okkays.com"])})
+return new B.XW([B.b(["colors: [gruvbox.org](https://gruvbox.org/)","regular font: [lato](https://www.latofonts.com/)","monospace font: [sourcefoundry:hack](https://sourcefoundry.org/hack/)","written by hand in dart/flutter"],p),f,n,"okkays@pm.me",h,m,l,o,"Principal Software Engineering Consultant","Kevin Kays","7576520310","okkays.com"])})
 s($,"b7t","aCS",()=>A.dg)
 s($,"b7v","aCT",()=>A.di)
 s($,"b7F","aNN",()=>new B.T_(20,1,0,0,A.F6,null))
